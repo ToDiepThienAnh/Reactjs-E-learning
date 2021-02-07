@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Login() {
+export default function Register() {
     return (
         <div className='container'>
             <div className='row'>
@@ -9,7 +9,7 @@ export default function Login() {
                 </div>
                 <div className='col-6'>
                     <form>
-                        <h1>Đăng nhập</h1>
+                        <h1>Đăng ký</h1>
                         <div className="form-group">
                             <label>Tài khoản</label>
                             <input type="text" name id className="form-control" placeholder />
@@ -18,7 +18,22 @@ export default function Login() {
                             <label>Mật Khẩu</label>
                             <input type="text" name id className="form-control" placeholder />
                         </div>
-
+                        <div className="form-group">
+                            <label>Nhập lại mật khẩu</label>
+                            <input type="text" name id className="form-control" placeholder />
+                        </div>
+                        <div className="form-group">
+                            <label>Họ tên</label>
+                            <input type="text" name id className="form-control" placeholder />
+                        </div>
+                        <div className="form-group">
+                            <label>Email</label>
+                            <input type="text" name id className="form-control" placeholder />
+                        </div>
+                        <div className="form-group">
+                            <label>Số điện thoại</label>
+                            <input type="text" name id className="form-control" placeholder />
+                        </div>
                         <div>
                             <button>Đăng kí</button>
                             <button>Đăng Nhập</button>
