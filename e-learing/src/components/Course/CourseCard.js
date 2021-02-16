@@ -1,12 +1,14 @@
 import React from 'react'
 
-export default function CourseCard() {
+export default function CourseCard(props) {
+    console.log("PropsCourse", props)
     return (
+
         <div>
             <div className="card">
                 <img className="card-img-top" src="https://picsum.photos/200" alt />
                 <div className="card-body">
-                    <h4 className="card-title">Tên khóa học</h4>
+                    <h4 className="card-title">{props.course.tenKhoaHoc}</h4>
                     <div className='d-flex'>
                         <div className='d-flex'>
                             <div>
