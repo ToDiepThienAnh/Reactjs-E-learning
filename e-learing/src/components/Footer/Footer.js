@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <div>
+        <div className='bg-dark text-white mt-4 container-fluid'>
             <div className='row'>
                 <div className='col-4'>
                     <h5>NHẬN TIN SỰ KIỆN & KHUYẾN MÃI</h5>

@@ -1,4 +1,4 @@
-import { GET_POPULAR_COURSES } from "../constants/CoursesPopularConst"
+import { GET_POPULAR_COURSES } from "../constants/CoursesManagementConst"
 
 const stateDefault = {
     arrCoursesPopular: []

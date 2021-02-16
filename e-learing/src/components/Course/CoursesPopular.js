@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from "react-redux";
-import { getCoursesPopularAction } from '../../redux/action/CoursesPopularAction';
+import { getCoursesPopularAction } from '../../redux/action/CoursesManagement';
 import CourseCard from './CourseCard';
 
 
@@ -51,10 +51,11 @@ export default function CoursesPopular(props) {
     }
 
     return (
-        <>
+        <div className='container'>
+            <h3>Các khóa học mới nhất</h3>
             <div className='row'>
                 {renderPopularCourses()}
             </div>
-        </>
+        </div>
     )
 }

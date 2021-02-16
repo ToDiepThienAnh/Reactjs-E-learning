@@ -7,9 +7,10 @@ import Menu from '../../components/Header/Menu'
 export default function Home() {
     return (
         <div>
-            {/* <Menu /> */}
-            {/* <Footer /> */}
+            <Menu />
+
             <CoursesPopular />
+            <Footer />
         </div>
     )
 }
