@@ -4,3 +4,28 @@ export const GET_USERS_LIST = 'GET_USERS_LIST'
 
 export const FIND_USER = 'FIND_USER'
 
+export const LOGIN = 'LOGIN'
+
+export const REGISTER = 'REGISTER'
+
+export const GET_USER_INFO = 'GET_USER_INFO'
+
+export const GET_USER_ACCOUNT = 'GET_USER_ACCOUNT'
+
+export const ADD_USER = 'ADD_USER'
+
+export const EDIT_USER = 'EDIT_USER'
+
+export const DELETE_USER = 'DELETE_USER'
+
+export const COURSES_NOT_REGISTER = 'COURSES_NOT_REGISTER'
+
+export const COURSES_WAITING = 'COURSES_WAITING'
+
+export const COURSES_CONFIRMED = 'COURSES_CONFIRMED'
+
+export const USERS_NOT_REGISTER = 'USERS_NOT_REGISTER'
+
+export const MEMBERS_WATING = 'MEMBERS_WATING'
+
+export const GET_MEMBERS_COURSE = 'GET_MEMBERS_COURSE'
