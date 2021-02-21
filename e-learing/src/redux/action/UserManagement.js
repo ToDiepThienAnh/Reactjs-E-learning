@@ -1,6 +1,6 @@
 import axios from "axios"
 import { ACCESS_TOKEN, DOMAIN, USER_LOGIN } from "../../util/setting"
-import { GET_TYPE_USERS, GET_USERS_LIST } from "../constants/UserManagementConst"
+import { GET_TYPE_USERS, GET_USERS_LIST, REGISTER } from "../constants/UserManagementConst"
 
 
 // lấy danh sách loại người dùng
@@ -70,7 +70,8 @@ export const DangNhapApi = (User) => {
         try {
             const res = await axios({
                 method: 'POST',
-                url: `${DOMAIN}/QuanLyNguoiDung/DangNhap`
+                url: `${DOMAIN}/QuanLyNguoiDung/DangNhap`,
+                data: User
             })
 
             localStorage.setItem(ACCESS_TOKEN, res.data.ACCESS_TOKEN)
@@ -81,7 +82,30 @@ export const DangNhapApi = (User) => {
         } catch (err) {
             console.log(err.response?.data);
 
-            console.log("lỗi", err); g
+            console.log("lỗi", err);
         }
+    }
+}
+
+// đăng kí
+export const RegisterApi = (User) => {
+    return async (dispatch) => {
+        try {
+            const res = await axios({
+                method: 'POST',
+                url: `${DOMAIN}/QuanLyNguoiDung/DangKy`,
+                data: User
+            })
+            dispatch({
+                type: REGISTER,
+                data: res.data
+            })
+
+        } catch (err) {
+            console.log(err.response?.data);
+
+            console.log("lỗi", err);
+        }
+
     }
 }
